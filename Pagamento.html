@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style1.css" media="screen">
+    <title>Ebooks.Domingas</title>
+    <link rel="Icon" href="ebooksicon.png">
+
+    <style>
+        body {
+            background-image: url("fundo5.webp");
+            height: 200px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <main>
+        <h1>Formulário de Pagamento</h1>
+    </main>
+    <form action="EbookDowloads.html">
+        <fieldset>
+            <legend><strong>Dados do Cliente</strong></legend>
+            <label>Nome Completo: </label>
+            <input type="text" name="senha"><br><br>
+            <label>Email:</label>
+            <input type="email" name="telefone"><br><br>
+            <label>Telefone:</label>
+            <input type="tel" name="codigo">
+        </fieldset>
+        <fieldset>
+            <legend><strong>Forma de Pagamento</strong></legend>
+            <input type="radio" name="resposta" id="animal-nao" value="nao" />
+            <label for="animal-sim">Cartão de Crédito</label><br>
+            <input type="radio" name="resposta" id="animal-sim" value="sim">
+            <label for="animal-nao">Pix</label><br>
+            <p>De: <s>R$ 100,00</s></p>
+            <p>Por: <strong>R$ 75,00</strong></p>
+            <fieldset>
+                <legend><strong>Dados do Cartão</strong></legend>
+                <label>Numero do Cartão: </label>
+                <input type="text" name="senha" placeholder="0000 0000 0000 0000"><br><br>
+                <label>Data de Expiração:</label>
+                <input type="date" name="dt_nasc"><br><br>
+                <label>Código de Segurança:</label>
+                <input type="tel" name="codigo" placeholder="123" maxlength="3">
+            </fieldset><br>
+            <button type="submit">Pagar</button>
+        </fieldset>
+    </form>
+
+    <a href="Ebook.html">Voltar</a>
+    <footer>&copy;Domingas 2024 - Desenvolvimento de Sistemas<p><a href="privacidade.html" style="color: rgb(0, 0, 0);">Política de Privacidade</a> | 
+        <a href="termos.html" style="color: rgb(5, 4, 4);">Termos de Serviço</a></p>
+</body>
+
+</html>
